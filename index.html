@@ -41,9 +41,26 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/vlog.html">Videos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/login.html">Inicia Sesión</a>
+                            <li>
+                                <a class="nav-link" href="./pages/login.html">Registrate</a>
                             </li>
+                            <div class="login">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email o nombre de usuario</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener mi sesion abierta</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                  </form>
+                            </div>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -83,7 +100,7 @@
     </header>
     <main>
         <div class="title">
-            <h2 class="text-center">bienvenido a cursos Pepito</h2>
+            <h2 class="text-center">Bienvenido a cursos Pepito</h2>
         </div>
 
         <div class="carousel">
@@ -129,57 +146,84 @@
         </div>
 
         <div class="card-group">
-        <div class="row">
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/angular.png" class="card-img-top" alt="Curso de Angular">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular JS</h5>
-                        <p class="card-text">Angular es un framework JavaScript, gratuito y Open Source, creado por Google y 
-                            destinado a facilitar la creación de aplicaciones web modernas de tipo SPA .</p>
-                        <a href="#" class="btn btn-primary">Subscribite</a>
+            <div class="row">
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/angular.png" class="card-img-top" alt="Curso de Angular">
+                        <div class="card-body">
+                            <h5 class="card-title">Angular JS</h5>
+                            <p class="card-text">Angular es un framework JavaScript, gratuito y Open Source, creado por
+                                Google y
+                                destinado a facilitar la creación de aplicaciones web modernas de tipo SPA .</p>
+                            <a href="#" class="btn btn-primary">Subscribite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/csharp.jpeg" class="card-img-top" alt="Curso de C Sharp">
+                        <div class="card-body">
+                            <h5 class="card-title">C#</h5>
+                            <p class="card-text">C# es un lenguaje de programación moderno, basado en objetos y
+                                con seguridad de tipos, que te perimira crear muchos tipos de aplicaciones seguras y
+                                sólidas.</p>
+                            <a href="#" class="btn btn-primary">Subscribite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/golang.jpeg" class="card-img-top" alt="Curso de GO">
+                        <div class="card-body">
+                            <h5 class="card-title">Golang</h5>
+                            <p class="card-text">Lenguaje compilado, open source de tipado fuerte desarrollado por
+                                google.
+                                Rapido y sencillo con mucha documentacion disponible y gran cantidad de recursos.</p>
+                            <a href="#" class="btn btn-primary">Subscribite</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/python.jpg" class="card-img-top" alt="Curso de Python">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                            <p class="card-text">Uno de los lenguajes interpretados mas populares de la actualidad. Con
+                                una facil curva de aprendizaje
+                                y muchas aplicaciones, como en machine learning, data science, AI, etc.
+                            </p>
+                            <a href="#" class="btn btn-primary center">Subscribite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/data-sc-py.jpeg" class="card-img-top" alt="Curso de Data science">
+                        <div class="card-body">
+                            <h5 class="card-title">Data science-Python</h5>
+                            <p class="card-text"> Este cursos te permitira realizar Proyectos desde el analisis y entendimiento de 
+                                los datos para generar mejores estructuras de BBDD, y reflejarlo en informacion certera y precisa.
+                            </p>
+                            <a href="#" class="btn btn-primary center">Subscribite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-3 col-md-6 mb-5 center-content">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./assets/react-js.jpeg" class="card-img-top" alt="Curso de react-js">
+                        <div class="card-body">
+                            <h5 class="card-title">Front end con React-js</h5>
+                            <p class="card-text">Una de las librerias mas demandadas de JavaScript. Podras desarrollar aplicaciones web de forma 
+                                ordenada y resumida. En este curso aprenderas a desarrollar el front end de aplicaciones web robustas y prolijas.
+                            </p>
+                            <a href="#" class="btn btn-primary center">Subscribite</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/csharp.jpeg" class="card-img-top" alt="Curso de C Sharp">
-                    <div class="card-body">
-                        <h5 class="card-title">C#</h5>
-                        <p class="card-text">C# es un lenguaje de programación moderno, basado en objetos y 
-                            con seguridad de tipos, que te perimira crear muchos tipos de aplicaciones seguras y sólidas.</p>
-                        <a href="#" class="btn btn-primary">Subscribite</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/golang.jpeg" class="card-img-top" alt="Curso de GO">
-                    <div class="card-body">
-                        <h5 class="card-title">Golang</h5>
-                        <p class="card-text">Lenguaje compilado, open source de tipado fuerte desarrollado por google. 
-                            Rapido y sencillo con mucha documentacion disponible y gran cantidad de recursos.</p>
-                        <a href="#" class="btn btn-primary">Subscribite</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4 mb-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./assets/python.jpg" class="card-img-top" alt="Curso de Python">
-                    <div class="card-body">
-                        <h5 class="card-title">Python</h5>
-                        <p class="card-text">Uno de los lenguajes interpretados mas populares de la actualidad. Con una facil curva de aprendizaje
-                            y muchas aplicaciones, como en machine learning, data science, AI, etc.
-                        </p>
-                        <a href="#" class="btn btn-primary center">Subscribite</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
-
-    </div>
-
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

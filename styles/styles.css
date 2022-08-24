@@ -21,25 +21,36 @@
     background: none;
     border: 1px solid rgba(255, 250, 250, 0.75)
 }
-
 main{
-        background-color: rgb(207, 207, 187);
-        background-image: url("../assets/fondo.webp");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        min-height: 99vh;
-        /* margin-bottom: 35px; */
-    }
+    display: inline-flex;
+    margin-top: 15vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    /* background color como backup para la imagen de fondo */
+    background-color: rgb(228, 241, 232);
+    background-image: url("../assets/fondo.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    min-height: 98vh;
+    margin-bottom: 0;
+}
 
 .carousel {
+    width: 45.5vw;
     display: flex;
     justify-content: center;
     padding-top: 1rem;
 }
 .carousel img {
-    width: 55vw;
+    width: 45vw;
 }
 
 .carousel-control-next:hover{
@@ -50,23 +61,145 @@ main{
 }
 
 .card-group{
-    display: flex;
-    justify-content: space-evenly;
     margin: 10vh;
 }
 
-.card{
-    color:rgba(255, 250, 250, 0.75);
-    background: linear-gradient(172deg , #000000 5%, #313131 40%, #2c2c2c 70%, #3a3939  100%);
+.center-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.card{
+    cursor: pointer;
+    color:rgba(255, 250, 250, 0.75);
+    background: linear-gradient(172deg , #000000 5%, #6d695d  100%);
+}
+
+.video{
+    width: 25vw;
+}
+
 
 .card h5{
     text-align: center;
 }
+
+.modal-header .btn-close{
+    background-color: #8f959a;
+}
+
+.video-title{
+    display: flex;
+}
+.video-title h5{
+    text-align: center;
+}
+
 
 .card .btn-primary{
     position: relative;
     bottom: 1%;
     background-color: transparent;
     border-color: rgba(255, 250, 250, 0.75);
+}
+
+.modal-content{
+    color:rgba(255, 250, 250, 0.75);
+    background: linear-gradient(172deg , #000000 5%, #6d695d  100%);
+}
+
+.fc-bg-color{
+    background-color: rgb(233, 233, 217);
+    border: 0;
+}
+
+.modal-footer .btn{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-footer .btn-secondary{
+    color: #8f959a;
+}
+
+.modal-footer .btn-primary{
+    color: rgba(97, 190, 5, 0.651);
+    border: 1px solid rgb(98, 190, 5);
+}
+
+.button-conteiner{
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.button-conteiner .btn-primary{
+    margin-bottom: 1rem;
+    max-width: 17rem;
+    color:rgba(255, 250, 250, 0.75);
+    background: radial-gradient(circle, #000000 0%, #36342f 65%);
+}
+
+.accordion{
+    width: 90vw;
+}
+.accordion-button {
+    background-color: #efefef;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #eff0f3;
+    background-color: #36342fc0;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23eff0f3'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+
+}
+
+.input-group-text{
+    color: #efefef;
+    background-color: #36342fc0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: cornsilk;
+}
+
+.login .btn-primary{
+    background-color: rgba(169, 169, 169, 0);
+}
+
+.form-conteiner{
+    padding: 10vh;
+    border-radius: 1.2rem;
+    color:rgba(255, 250, 250, 0.75);
+    background: linear-gradient(172deg , #000000 5%, #6d695d  100%);
+}
+
+.form-conteiner .btn-primary{
+    background-color: rgba(128, 128, 128, 0);
+}
+
+@media(max-width:940px){
+.button-conteiner{
+    flex-direction: column;
+    align-items: center;
+}
+
+    .video{
+        width: 35vw;
+    }
+}
+@media(max-width:480px) {
+    .carousel {
+        width: 95.5vw;
+    }
+    .carousel img {
+        width: 95vw;
+    }
+
+    .video{
+        width: 95vw;
+    }
 }

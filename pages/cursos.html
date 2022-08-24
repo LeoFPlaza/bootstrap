@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <nav class="navbar navbar-dark bg-color-nav fixed-top">
             <div class="container-fluid">
@@ -38,9 +40,26 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./vlog.html">Videos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./login.html">Inicia Sesión</a>
+                            <li>
+                                <a class="nav-link" href="./login.html">Registrate</a>
                             </li>
+                            <div class="login">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email o nombre de usuario</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener mi sesion abierta</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                  </form>
+                            </div>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -67,10 +86,11 @@
                         </ul>
                         <P class="fs-6 fst-italic text-center">Tenemos todos los cursos para vos</P>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar Cursos" aria-label="Search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar Cursos"
+                                aria-label="Search">
                             <button class="btn btn-success" type="submit">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                                        </button>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -79,11 +99,344 @@
     </header>
 
     <main>
-        <div class="">
-            <h1>index!</h1>
+        <div class="title">
+            <h2>Cursos</h2>
         </div>
 
+        <p class="fs-5">Mirá todo lo que podes aprender con nosotros</p>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        React-js
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <strong>vas a aprender.</strong>
+                        <ul>
+                            <li>Fundamentos de React JS desde cero para principiantes [para aquellos que nunca han
+                                tocado
+                                una librería de Javascript]</li>
+                            <li>Características principales de los Hooks en React.js</li>
+                            <li> Configuración de rutas y rutas protegidas.</li>
+                            <li> Configuración de Firebase en nuestro proyecto React.</li>
+                            <li>Trabajar con Bases de Datos en tiempo real con Firestore [un servicio de Firebase].</li>
+                            <li> Configurar Auth [autenticación] con Login y registro de nuevos usuarios con Email y
+                                Contraseña.</li>
+                            <li> Relacionar usuarios registrados con colecciones [bases de datos]</li>
+                            <li> Subir proyecto a Hosting de Firebase.</li>
+                            <li> Trabajar con Reglas de seguridad de Firebase.</li>
+                        </ul>
+                        <div class="row mt-3">
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-circle-info"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">+ Info</p>
+                            </div>
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">Agregar al carrito</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSeven">
+                        Full stack (MEAN)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSeven">
+                    <div class="accordion-body">
+                        <strong>lo que vas a aprender.</strong>
+                        <ul>
+                            <li>Programación desde cero y paso a paso, sin necesidad de tener conocimientos previos.
+                            </li>
+                            <li>JavaScript, el lenguaje de programación más popular en la actualidad.</li>
+                            <li>jQuery, la librería más popular y utilizada en JavaScript.</li>
+                            <li>Maquetación web, creando varios proyectos web.</li>
+                            <li>TypeScript, el superset de Microsoft que sube de nivel a JavaScript.</li>
+                            <li>POO, Programación Orientada a Objetos en JavaScript.</li>
+                            <li>Angular, el framework para JavaScript estándar para desarrollar aplicaciones web SPA,
+                                dinamicas, modernas y escalables.</li>
+                            <li>NodeJS, tecnología que nos permite hacer desarrollos back-end usando únicamente
+                                JavaScript
+                            </li>
+                            <li>Angular, uno de los frameworks para JavaScript mas potentes</li>
+                            <li>ExpressJS, framework para desarrollo de APIs RESTful.</li>
+                            <li>MongoDB</li>
+                            <li>Habilidades full-stack, haciendo cientos de ejercicios y varios proyectos.</li>
+                        </ul>
+                        <div class="row mt-3">
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-circle-info"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">+ Info</p>
+                            </div>
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">Agregar al carrito</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseEight">
+                        Programación Reactiva con Spring Boot 2 y Spring WebFlux
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingEight">
+                    <div class="accordion-body">
+                        <strong>Lo que vas a aprender.</strong>
+                        <ul>
+                            <li>
+                                Crea flujos reactivos usando Observables Flux y Mono, y sus principlaes operadores
+                                ReactiveX
+                            </li>
+                            <li>
+                                Implementa contrapresión (back pressure) del lado del cliente con WebFlux
+                            </li>
+                            <li>
+                                Maneja tolerancia a fallos y latencia en Flujo (Stream) reactivos
+                            </li>
+                            <li>
+                                Construye aplicaciones reactivas, asíncronas y sin bloqueo con Spring Boot, Reactor y
+                                Spring
+                                WebFlux
+                            </li>
+                            <li>
+                                Aprende todo lo necesario para trabajar con Reactor y Spring WebFlux siguiendo las
+                                mejores
+                                prácticas
+                            </li>
+                            <li>
+                                Construye un API Restful Reactiva para CRUD usando Spring WebFlux + Spring Data Mongo
+                            </li>
+                            <li>
+                                Desarrolla una aplicación web para CRUD usando Thymeleaf Reactivo + Spring WebFlux +
+                                Spring
+                                Data
+                            </li>
+                            <li>
+                                Implementa subida de archivos con programación reactiva
+                            </li>
+                            <li>
+                                Integra y aprende a trabajar con MongoDB en Spring de forma reactiva
+                            </li>
+                            <li>
+                                Aprende todo lo necesario para escribir código con programación funcional
+                            </li>
+                            <li>
+                                Realiza pruebas de integración con JUnit y WebTestClient
+                            </li>
+                            <li>
+                                Aprende a crear y consumir servicios web RESTful con WebFlux
+                            </li>
+                            <li>
+                                Conecta y consume otros microservicios utilizando cliente HTTP reactivo con WebClient.
+                            </li>
+                            <li>
+                                Implementa el registro y el escalamiento dinámico con el servidor Eureka Spring Cloud.
+                            </li>
+                            <li>
+                                Implementa Balanceo de carga del lado del cliente con Spring Cloud.
+                            </li>
+                        </ul>
+                        <div class="row mt-3">
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-circle-info"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">+ Info</p>
+                            </div>
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">Agregar al carrito</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseNine">
+                        DevOps
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingNine">
+                    <div class="accordion-body">
+                        <strong>En este curso vas a aprender.</strong>
+                        <ul>
+                            <li>
+                                Entenderás de una manera sencilla y práctica que es y en que consiste DevOpslas piezas
+                                claves para implementarlo y todos los beneficios que aporta
+                            </li>
+                            <li>
+                                Aprenderás como funciona docker, como instalarlo y crear contenedores para cualquier
+                                aplicación
+                            </li>
+                            <li>
+                                Aprenderás como funciona kubernetes, podras instalar un cluster en tu ordenadore, crear
+                                y
+                                administrar orquestaciones de microservicios
+
+                            </li>
+                            <li>
+                                Aprenderás sobre como instalar las principales herramientas para trabajar con DevOps
+                                como
+                                Kubernetes, Docker, y git Jenkins
+                            </li>
+                            <li>
+                                Te enseñaré como diseñar y construir pipelines en jenkins para probar, compilar y
+                                desplegar
+                                aplicaciones de maenra automatica, integrandose con git y sonar
+                            </li>
+                            <li>
+                                Ciclo de vida DevOps, CI (Integración continua) y CD (entrega Continua)
+                            </li>
+                            <li>
+                                Aprenderas de manera practica como trabajar con Docker, como crear imagenes y
+                                contenedores
+                                de microservicios y luego crear una orquestación en kubernetes
+                            </li>
+                            <li>
+                                Te enseñaré sobre las prácticas de integración continua y despliegue continuo.
+                            </li>
+                            <li>
+                                Podras practicar administrando y monitorizando tu ecositema de servicios en un cluster
+                                de
+                                kubernetes.
+                            </li>
+                            <li>
+                                Tendrás acceso al código de fuente de los microservicios y scripsts que se utilicen en
+                                el
+                                curso
+                            </li>
+                            <li>
+                                Vamos a aprender sobre automatización de test unitarios y en que consiste TDD
+                            </li>
+                        </ul>
+                        <div class="row mt-3">
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-circle-info"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">+ Info</p>
+                            </div>
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">Agregar al carrito</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTen">
+                        Microservicios con Spring y Docker
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTen">
+                    <div class="accordion-body">
+                        <strong>En este curso vas a aprender.</strong>
+                        <ul>
+                            <li>
+                                Aprenderás como construir microservicios de una manera profesional bajo estandares y
+                                buenas practicas.
+                            </li>
+                            <li>
+                                Diseñar y construir aplicaciones completas con microservicios en spring boot y Docker
+                                para el despliegue y administración
+                            </li>
+                            <li>
+                                Comprender Spring cloud netflix usando Eureka discovery para la comunicación entre
+                                microservicios e implementar un servidor de configuración
+
+                            </li>
+                            <li>
+                                Tendrás el conocimiento para construir soluciones complejas de acuerdo a lo que demanda
+                                el mercado laboral.
+
+                            </li>
+                            <li>
+                                Entenderás el paradigma de programacion reactiva con spring webflux
+                            </li>
+                            <li>
+                                Aprenderas sobre spring data para acceso a datos, orquestacion de microservicios,
+                                exponer y consumir APIs
+                            </li>
+                            <li>
+                                Diseñar y construir APIs bajo el estandar open API especification y a aplicar buenas
+                                practicas en el desarrollo de apis para comunicar aplicaciones
+                            </li>
+                            <li>
+                                Utilizar swagger y spring fox para trabajar con el enfoque api first y crear
+                                aplicaciones front en angular semiautomatizadas con generadores de codigo
+                            </li>
+                            <li>
+                                Instalar y configurar keycloack, para comprender OAuth2, SSO open Id conect y poder
+                                implementar seguridad en tus APIs y aplicaciones con tokens Bearer JWT
+
+                            </li>
+                            <li>
+                                Practicas adicionales con enrutamiento mediante la implementacion de apigateway reverse
+                                proxy y conceptos avanzados de arquitectura como service mesh apimanager
+                            </li>
+                        </ul>
+                        <div class="row mt-3">
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-circle-info"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">+ Info</p>
+                            </div>
+                            <div class="center-content col-lg-4">
+                                <button type="button" class="btn btn-secondary"><i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                                <p class="fs-6 fst-italic text-center fw-light">Agregar al carrito</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
-</html> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
