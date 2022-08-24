@@ -34,7 +34,7 @@ body {
     margin-top: 0;
     /* background color como backup para la imagen de fondo */
     background-color: rgb(228, 241, 232);
-    background-image: url("../assets/fondo.webp");
+    background-image: url("assets/fondo.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
