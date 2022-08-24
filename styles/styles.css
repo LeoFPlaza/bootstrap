@@ -1,0 +1,72 @@
+.bg-color-nav{
+    background: linear-gradient(to right, #000000 5%, #313131 40%, #2c2c2c 70%, #3a3939  100%);
+}
+
+.text-bg-color-off {
+    color: #fff!important;
+    background: linear-gradient(172deg , #000000 5%, #313131 40%, #2c2c2c 70%, #3a3939  100%);
+}
+
+.counter{
+    background-color: rgba(255, 99, 71, 0.699);
+    font-size: 11px;
+    color: black;
+    margin-left: -10px;
+    border-radius: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.btn-success{
+    background: none;
+    border: 1px solid rgba(255, 250, 250, 0.75)
+}
+
+main{
+        background-color: rgb(207, 207, 187);
+        background-image: url("../assets/fondo.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        min-height: 99vh;
+        /* margin-bottom: 35px; */
+    }
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.carousel img {
+    width: 55vw;
+}
+
+.carousel-control-next:hover{
+    background-image: linear-gradient(to right,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+.carousel-control-prev:hover{
+    background-image: linear-gradient(to left,rgba(26, 24, 24, 0), rgba(26, 24, 24, 0.692));
+}
+
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh;
+}
+
+.card{
+    color:rgba(255, 250, 250, 0.75);
+    background: linear-gradient(172deg , #000000 5%, #313131 40%, #2c2c2c 70%, #3a3939  100%);
+}
+
+.card h5{
+    text-align: center;
+}
+
+.card .btn-primary{
+    position: relative;
+    bottom: 1%;
+    background-color: transparent;
+    border-color: rgba(255, 250, 250, 0.75);
+}
